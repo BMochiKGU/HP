@@ -1,0 +1,359 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電子情報通信学会　量子通信・ネットワーク研究専門委員会</title>
+    <style>
+        :root {
+            --primary-color: #0a2463;
+            --secondary-color: #3e92cc;
+            --accent-color: #d8315b;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --header-footer-bg: #1d3557;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--header-footer-bg);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        
+        header h1 a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        .bannerTop {
+            background-image: url('bannerTop2rot.svg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+ 	    height: 150px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+
+        .bannerbottom {
+            background-image: url('BannerBottom.webp');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+        .bannerTop h2 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .bannerTop p {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        main section {
+            padding: 60px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        main section:last-child {
+            border-bottom: none;
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        h3::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--secondary-color);
+            margin: 10px auto 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #c22148;
+            transform: scale(1.05);
+        }
+                     
+        .RelatedInfo-list {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .RelatedInfo-list li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background-color: var(--header-footer-bg);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+            }
+            nav ul {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav ul li {
+                margin: 5px 10px;
+            }
+        }
+    .news-section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .news-section h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .news-item {
+      border-bottom: 1px solid #eee;
+      padding: 15px 0;
+    }
+
+    .news-item:last-child {
+      border-bottom: none;
+    }
+
+    .news-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #007acc;
+      margin: 0 0 5px;
+    }
+
+    .news-date {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 8px;
+    }
+
+    .news-summary {
+      font-size: 15px;
+      color: #444;
+    }
+
+.related-info-box {
+  text-align: center;
+  background: #f9f9f9;
+}
+.related-info-box h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #333;
+}
+.related-info-box .btn {
+  display: inline-block;
+  width: 220px;
+  margin: 10px 0;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #007acc;
+  background: #fff;
+  border: 2px solid #007acc;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+.related-info-box .btn:hover {
+  background: #007acc;
+  color: #fff;
+}
+    </style>
+</head>
+<body>
+
+<header>
+<div class="container">
+  <img src="logo.png" alt="" style="float:left;width:100px;height:55px;">          
+            <nav>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="#About Us">QCN研について</a></li>
+                    <li><a href="研究会開催.html">研究会開催予定</a></li>
+                    <li><a href="委員会名簿.html">委員会名簿</a></li>
+                    <li><a href="#Events">イベント</a></li>
+                    <li><a href="#Awards">表彰</a></li>
+                    <li><a href="#English">English</a></li>
+                </ul>
+            </nav>
+        </div>
+</header>
+
+
+<main>
+   <div class="bannerTop">
+        <div class="bannerTop-content">
+            <h2>電子情報通信学会 量子通信・ネットワーク研究専門委員会 </h2>
+		<br><br><br><br><br><br><br><br><br><br>
+        </div>
+   </div>
+
+
+
+
+<section class="news-section">
+  <h3>QCN研究会ワークショップ実施概要</h3>
+
+  <div class="news-item">
+    <p class="news-title">1. 日時</p>
+    <p class="news-summary">2025年10月17日（金）13:30～19:30</p>
+  </div>
+
+  <div class="news-item">
+    <p class="news-title">2. 会場</p>
+    <p class="news-summary">
+      成蹊大学<br>
+      研究会会場：６号館３０１教室<br>
+      懇親会会場：６号館地下1F COMMichi（こみち）<br>
+      アクセス：吉祥寺駅北口より徒歩１５分<br>
+      <a href="https://www.seikei.ac.jp/university/aboutus/accessmap.html" target="_blank">https://www.seikei.ac.jp/university/aboutus/accessmap.html</a>
+    </p>
+  </div>
+
+  <div class="news-item">
+    <p class="news-title">3. 会費（案）</p>
+    <p class="news-summary">講演者の方は無料とさせて頂きます。</p>
+  </div>
+
+  <div class="news-item">
+    <p class="news-title">4. 講演時間（招待講演）</p>
+    <p class="news-summary">
+      講演時間：25分、質疑応答：5分<br>
+      ※HDMIで接続可能なPCをご持参ください。
+    </p>
+  </div>
+
+  <div class="news-item">
+    <p class="news-title">5. ご講演の内容</p>
+    <p class="news-summary">
+      ご講演に際し、量子に関するご専門分野の研究内容をご紹介いただければ幸いです。<br>
+      また、通信ソサイエティの研究者が量子通信・ネットワークとどのように関われるか、
+      コラボレーションの可能性などについてもご言及いただけますと幸いです。
+    </p>
+  </div>
+
+  <div class="news-item">
+    <p class="news-title">6. 参考：QCN研究会について</p>
+    <p class="news-summary">
+      QCN研究専門委員会は、通信ソサイエティの研究者が量子通信・ネットワークについて学び、
+      取り組むきっかけとなる場を提供することを目的としています。<br><br>
+      特に量子情報に関わってこなかった通信の研究者が参加しやすいよう、量子通信や量子ネットワーク
+      に関わる古典情報の課題も扱えるコミュニティの構築を目指しております。<br><br>
+      2025年10月より、電子情報通信学会の特別研究専門委員会として活動開始予定です。
+    </p>
+  </div>
+</section>
+
+
+    </main>
+
+    <footer>
+        <div class="bannerbottom"></div>
+        <div class="container" >
+            <p>&copy; IEICE Technical Committee on Quantum Communication Networks. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
